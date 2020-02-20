@@ -8,13 +8,24 @@ a {
 	text-decoration: none;
 	color: #9a9a9a;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
 h4 {
 	font-size: 20px;
 }
 body {
-	height: 3000px;
 	width: auto;
 	background-color: white;
+}
+i {
+	font-size: 36px;
+}
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
 }
 /* Навигация */
 nav {
@@ -23,7 +34,7 @@ nav {
 	height: 70px;
 }
 .nav {
-	width: 1100px;
+	width: 80%;
 	height: 70px;
 	margin: 0px auto;
     display: flex;
@@ -52,7 +63,7 @@ header {
 }
 
 .bo {
-	width: 1100px;
+	width: 80%;
 	height: 100%;
 	margin: auto;
 	display: flex;
@@ -62,7 +73,7 @@ header {
 }
 /* Форма */
 
-form {
+form.trial {
 	width: 360px;
 	height: 360px;
 	float: right;
@@ -77,7 +88,7 @@ form {
 	border-radius: 5px;
 	background-color: white;
 }
-form p {
+form.trial p {
 	background-color: #f5f5f5;
 	width: 100%;
 	height: 60px;
@@ -89,25 +100,24 @@ form p {
 	font-weight: 700;
 	text-align: center;
 }
-form span {
+form.trial span {
 	color: #ff9b51;
 	text-transform: uppercase;
 	font-size: 20px;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.trial input[type="text"],
+.trial input[type="email"],
+.trial input[type="password"] {
 	padding: 10px 10px;
 	width: 60%;
 	font-size: 14px;
 
-	outline: none;
 	transition: .25s;
 
 	border: none;
 	border-bottom: 1px solid #9a9a9a;
 }
-input[type="submit"] {
+.trial input[type="submit"] {
 	width: 100%;
 	height: 60px;
 
@@ -115,13 +125,10 @@ input[type="submit"] {
 	color: white;
 	background-color: #ff9b51;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+.trial input[type="text"]:focus,
+.trial input[type="email"]:focus,
+.trial input[type="password"]:focus {
 	width: 70%;
-}
-input[type="submit"]:focus {
-	outline: none;
 }
 
 /* Intro */
@@ -139,18 +146,21 @@ input[type="submit"]:focus {
 }
 .intro h2 {
 	color: #a6a6a6;
-	font-family: 'Raleway', sans-serif;
 }
 .intro p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	color: #d7d7d7;
 }
-.no-item {
+.intro h2::after {
 	content: "";
-	background-color: white;
-	width: 65px;
 	height: 2px;
+	width: 100px;
+	
+	display: block;
+	margin-top: 15px;
+
+	background-color: white;
 }
 
 .btn-int {
@@ -168,7 +178,7 @@ input[type="submit"]:focus {
 /* brand-bar */
 .brand-bar {
 	height: 105px;
-	width: 1100px;
+	width: 80%;
 	margin: 0px auto;
 	background-color: white;
 	display: flex; 
@@ -189,8 +199,6 @@ input[type="submit"]:focus {
 	float: right;
 	display: flex; 
 	justify-content: space-around;
-}
-i {
 	font-size: 36px;
 }
 /* Features */
@@ -219,7 +227,7 @@ div.tabs > div.tab {
 	height: auto;
 }
 .container > section {
-	width: 1100px;
+	width: 80%;
 	height: 600px;
 	margin: 0px auto;
 } 
@@ -236,7 +244,7 @@ div.tabs > div.tab {
 }
 div.text {
 	height: 320px;
-	max-width: 50%;
+	max-width: 48%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;	
@@ -252,11 +260,15 @@ div.image-container {
 	background-color: gray;
 }
 
-div.no-item-1 {
+.text h4::after {
 	content: "";
-	background-color: #ff9b51;
-	width: 65px;
 	height: 2px;
+	width: 100px;
+	
+	display: block;
+	margin-top: 15px;
+
+	background-color: #ff9b51;
 }
 
 /* Second Feature */
@@ -283,7 +295,7 @@ div.no-item-1 {
 	text-align: center;
 }
 .container {
-	width: 1100px;
+	width: 80%;
 	height: 600px;
 	margin: 0px auto;
 	padding: 60px 0;
@@ -304,14 +316,26 @@ div.no-item-1 {
 .header h2 {
 	text-transform: uppercase;
 	font-size: 30px; 
-	font-family: 'Raleway', sans-serif;
 }
-.header > .no-item-1 {
+.header > h2::after {
+	content: "";
+	height: 2px;
+	width: 100px;
+	
+	display: block;
 	margin: 0 auto;
+	margin-top: 15px;
+
+	background-color: #ff9b51;
 }
 .good-item {
+	max-height: 320px;
+	max-width: 320px;
+
 	width: 33%;
 	height: 100%;
+	padding: 1%;
+	margin-top: calc(40px - 2%);
 	
 	display: flex;
 	flex-direction: column;
@@ -319,7 +343,6 @@ div.no-item-1 {
 	align-items: center;
 
 	box-sizing: border-box;
-	padding-top: 40px;
 }
 .good-item i {
 	border: 3px solid #ff9b51;
@@ -331,9 +354,9 @@ div.no-item-1 {
 	color: #ff9b51;
 }
 .three-items {
+	width: 80%;
 	display: flex;
-	justify-content: space-around;
-
+	justify-content: space-between;
 	align-items: center;
 
 	height: 320px;
@@ -346,11 +369,10 @@ div.no-item-1 {
 	height: 320px;
 	background-color: #9a9a9a;
 	color: #fff;
-	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 .custom-section > .container {
-	width: 1100px;
+	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -363,7 +385,7 @@ div.no-item-1 {
 }
 .custom-section > .container h2::after {
 	content: "";
-	height: 3px;
+	height: 2px;
 	width: 100px;
 	
 	display: block;
@@ -371,6 +393,100 @@ div.no-item-1 {
 	margin-top: 15px;
 
 	background-color: #fff;
+}
+
+/* Footer */
+form.contact-us {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.container-name {
+	margin: 0 auto;
+	text-align: center;
+}
+.container-name h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.container-name h2::after {
+	content: "";
+	height: 2px;
+	width: 100px;
+	background-color: #ff9b51;
+	display: block;
+	margin: 20px auto;
+
+}
+
+.contact-us input {
+	border: none;
+	border-bottom: 1px solid #d6d6d6; 
+
+	padding: 5px;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	
+	border: none;
+	border-bottom: 1px solid #d6d6d6;
+
+	box-sizing: border-box;
+	resize: none;
+	overflow-y: none;
+
+}
+.container-form {
+	display: flex;
+	justify-content: space-between;
+}
+.container-address {
+	width: 48%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.message {
+	width: 48%;
+	height: 200px;
+}
+input.btn-mail {
+	width: 130px;
+	height: 45px;
+	margin: 0 auto;
+
+	background-color: #ff9b51;
+	border-radius: 7px; 
+	border: none;
+
+	color: white;
+}
+
+/* Mini Social */
+.social-media-mini {
+	height: 70px;
+	width: 100%;
+	background-color: #000;
+	padding: 10px 0;
+
+	content: "";
+	color: #cccccc;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.social-media-mini i {
+	font-size: 25px;
+
+}
+.icons-footer i {
+	letter-spacing: 20px;
 }
 
 
@@ -383,3 +499,25 @@ div.no-item-1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar-track {
+	background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #ff9b51;
+}
+
+
+::-webkit-scrollbar{
+	width: 10px;
+}
