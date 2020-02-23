@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
 <head>
 	<meta charset="UTF-8">
 	<title>practice one</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/14cceacb2d.js" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	<nav><div class="nav">
@@ -18,11 +16,11 @@
 		</div>
 		<div class="as">
 			<ul>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Pricing</a></li>
-				<li><a href="#">Reviwes</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#reviwes">Reviwes</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div></nav>
@@ -62,9 +60,27 @@
 			</p>
 		</div>
 
-		<div class="features">
-
+		<div class="features" id="features">
 			<div class="container">
+				<section class="features-1 f-content">
+					<div class="tabs-container">
+						<button class="tab-1">TAB 1</button>
+						<button class="tab-2">TAB 2</button>
+						<button class="tab-3">TAB 3</button>
+					</div>
+					<div class="text-container">
+						<h4>Tabs with soft transitioning effect.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, incidunt!</p>
+						<button class="btn-int">Download</button>
+					</div>
+					<div class="tab-image-container">
+						<img src="img/city.png" alt="city">
+					</div>
+				</section>
+			</div>
+			<div class="container">
+
 				<section class="features-2 f-content">
 					<div class="image-container">
 						<img src="https://picsum.photos/450/300" alt="image-3">
@@ -102,7 +118,7 @@
 		</div>
 
 
-		<div class="our-process">
+		<div class="our-process" id="about">
 			<div class="container">
 				<div class="header">
 					<h2>why this is awesome</h2>
@@ -128,8 +144,108 @@
 				</div>
 			</div>
 		</div>
-		<div class="pricing-options"></div>
-		<div class="customers-saying"></div>
+		
+		<div class="pricing-options" id="pricing">
+			<div class="price-container">
+				<div class="header">
+					<h2>Pricing Options</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="three-cards">
+					<div class="card">
+					<div class="black-part">	
+						<h4>Basic</h4>					
+						<p class="price"><span class="dollar">$</span>0</p>
+						<p class="pay">Free for Life</p>
+					</div>
+					<div class="what">
+						<p>1 Gb of space</p>
+						<p>10 Gb of bandwidth</p>
+						<p>3 websites</p>
+						<p>basic customization</p>
+						<p>wordpress integretion</p>
+						<p>email support</p>
+					</div>
+				</div>
+					<div class="card middle-card">
+					<div class="black-part">
+						<h4>Professional</h4>
+						<p class="price"><span class="dollar">$</span>19</p>
+						<p class="pay">Monthly Payment</p>
+					</div>
+					<p class="popular">Our most popular</p>
+					<div class="what">
+						<p>5 Gb of space</p>
+						<p>50 Gb of bandwidth</p>
+						<p>12 websites</p>
+						<p>advanced customization</p>
+						<p>wordpress integretion</p>
+						<p>email support</p>
+					</div>
+				</div>
+					<div class="card">
+						<div class="black-part">
+							<h4>Enterprise</h4>
+							<p class="price"><span class="dollar">$</span>70</p>
+							<p class="pay">Monthly Payment</p>
+						</div>
+						<div class="what">
+							<p>Unlimited space</p>
+							<p>unlimited bandwidth</p>
+							<p>100 websites</p>
+							<p>advanced customization</p>
+							<p>wordpress integretion</p>
+							<p>24/7 customer support</p>
+						</div>
+				</div>
+				</div>
+			</div>	
+		</div>
+
+
+		<div class="customers-saying" id="reviwes">
+			<div class="header">
+				<h2>What Our Customers Are Saying</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="quotes">
+				<div class="quote-1 quote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vel nulla, deleniti repudiandae quis quos id? Facilis esse pariatur aperiam?</p>
+					
+					<div class="person">
+						<img src="https://picsum.photos/70" alt="face">
+						<div class="name">
+							<p>Jack S.</p>
+							<p>Coder</p>
+						</div>
+					</div>
+				</div>
+				<div class="quote-2 quote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vel nulla, deleniti repudiandae quis quos id? Facilis esse pariatur aperiam?</p>
+					
+					<div class="person">
+						<img src="https://picsum.photos/70" alt="face">
+						<div class="name">
+							<p>Jack S.</p>
+							<p>Coder</p>
+						</div>
+					</div>
+				</div>
+				<div class="quote-3 quote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vel nulla, deleniti repudiandae quis quos id? Facilis esse pariatur aperiam?</p>
+					
+					<div class="person">
+						<img src="https://picsum.photos/70" alt="face">
+						<div class="name">
+							<p>Jack S.</p>
+							<p>Coder</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="custom-section">
 			<div class="container">
 				<h2>STYLISH AXURE DESIGN</h2>
@@ -139,7 +255,7 @@
 		</div>
 	</main>
 	
-	<footer>
+	<footer id="contact">
 
 			<div class="container">
 				<form class="contact-us">
